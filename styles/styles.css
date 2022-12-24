@@ -1,0 +1,20 @@
+#firstLine {
+	width: 90%;
+	margin: 50px auto;
+	font-size: 15px;
+}
+
+#firstLine .input-field {
+	width: 100%;
+	text-align: center;
+}
+
+#firstLine .input-field .select-wrapper {
+	display: inline-block;
+	margin-right: 20%;
+	width: 30%;
+}
+
+#download {
+	display: inline-block;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Nathan Marianovsky">
+		<meta name="application-name" content="VPN Client">
+		<meta name="description" content="Client designed to provide a gui which can create and destroy an openvpn connection">
+		<title>VPN Client</title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" async>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" async></script>
+		<script type="text/javascript" src="../scripts/primary.js" async></script>
+	</head>
+	<body class="grey lighten-3">
+		<nav>
+			<div class="nav-wrapper grey darken-1">
+				<div class="brand-logo center">VPN Client</div>
+				<ul id="nav-mobile" class="right">
+			        <li><a id="help">Help</a></li>
+		      	</ul>
+			</div>
+		</nav>
+		<div id="firstLine">
+			Choose a provider and download the associated openvpn connection files prior to attempting a connection. The files only have to be downloaded once, but can be downloaded as many times as desired. 
+			<div class="input-field">
+			    <select id="providerInput">
+					<option value="" disabled selected>Choose a Provider:</option>
+					<option value="ipvanish">IPVanish</option>
+			    </select>
+		  		<a id="download" class="waves-effect waves-light btn grey darken-4"><i class="material-icons right">download</i>Download OVPN Files</a>
+		  	</div>
+		</div>
+		<div id="secondLine">
+			Choose a provider and download the associated openvpn connection files prior to attempting a connection:
+			<div class="input-field">
+			    <select id="providerInput">
+					<option value="" disabled selected>Choose a Provider:</option>
+					<option value="ipvanish">IPVanish</option>
+			    </select>
+		  		<a id="download" class="waves-effect waves-light btn grey darken-4"><i class="material-icons right">download</i>Download OVPN Files</a>
+		  	</div>
+		</div>
+		<div id="helpModal" class="modal">
+		    <div class="modal-content">
+		      	<h4 class="center">Help</h4>
+		      	<p>This app is designed to provide a graphical interface to create and destroy an openvpn connection.</p>
+		      	<p class="right">Last Modification Date: 12/19/22<br>Designed by Nathan Marianovsky</p>
+	    	</div>
+		    <div class="modal-footer">
+		    	<label id="introductionCheckLabel" class="left">
+		        	<input type="checkbox" class="filled-in" id="introductionCheck"/>
+			        <span id="introductionCheckSpan">Don't Show Introduction on App Load</span>
+		      	</label>
+		      	<a class="modal-close waves-effect waves-green btn-flat">Exit</a>
+		    </div>
+	  	</div>
+	</body>
+</html>
